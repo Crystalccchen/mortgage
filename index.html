@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mortage</title>
+  </head>
+  <body>
+    <form id="loan-form">
+      <label>貸款類型</label>
+      <input type="radio" name="type" value="general" />一般貸款
+      <input type="radio" name="type" value="youth" />青安貸款
+      <input type="radio" name="type" value="combo" />組合貸款
+
+      <label>計算方式</label>
+      <select id="years">
+        <option value="loan">按貸款總額</option>
+        <option value="house">按房屋總價</option>
+      </select>
+
+      <label>貸款總額</label>
+      <input type="number" id="amount" placeholder="萬元" />
+
+      <label>貸款期限</label>
+      <select id="years">
+        <option value="30">30年(360個月)</option>
+        <option value="20">20年(240個月)</option>
+      </select>
+
+      <label>寬限期</label>
+      <select id="gracePeriod">
+        <option value="0">0年</option>
+        <option value="1">1年</option>
+        <option value="2">2年</option>
+        <option value="3">3年</option>
+        <option value="4">4年</option>
+        <option value="5">5年</option>
+      </select>
+
+      <label>利率方式</label>
+      <select id="interestRate">
+        <option value="singleRate">單一利率</option>
+        <option value="tieredRate">多段利率</option>
+      </select>
+
+      <button id="calcBtn">開始計算</button>
+    </form>
+
+    <div class="result-container">
+      <!-- 本息平均攤還 -->
+      <div class="result-card">
+        <h3>本息平均攤還</h3>
+        <p class="monthly">36,663 元/月</p>
+        <a href="#" class="detail-link">查看明細</a>
+
+        <ul class="detail-list">
+          <li><span class="dot principal"></span> 本金（1,000 萬元）</li>
+          <li><span class="dot interest"></span> 利息（320 萬元）</li>
+          <li><span class="dot total"></span> 本息合計（1,320 萬元）</li>
+        </ul>
+
+        <button class="plan-btn">立即查看適合的貸款方案</button>
+      </div>
+
+      <!-- 本金平均攤還 -->
+      <div class="result-card">
+        <h3>本金平均攤還</h3>
+        <p class="monthly">43,944 元/月</p>
+        <p class="subtext">每月遞減</p>
+        <a href="#" class="detail-link">查看明細</a>
+
+        <ul class="detail-list">
+          <li><span class="dot principal"></span> 本金（1,000 萬元）</li>
+          <li><span class="dot interest"></span> 利息（292 萬元）</li>
+          <li><span class="dot total"></span> 本息合計（1,292 萬元）</li>
+        </ul>
+
+        <button class="plan-btn">立即查看適合的貸款方案</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

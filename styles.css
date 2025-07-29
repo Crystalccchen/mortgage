@@ -1,0 +1,93 @@
+#loan-form{
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.result-card {
+  width: 260px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.result-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.result-card .monthly {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.result-card .subtext {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: -0.3rem;
+}
+
+.detail-link {
+  display: block;
+  margin: 0.5rem 0 0.8rem;
+  font-size: 0.85rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.detail-link:hover {
+  text-decoration: underline;
+}
+
+.detail-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  text-align: left;
+}
+
+.detail-list li {
+  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.principal { background-color: #2c3e50; } /* 深藍 */
+.interest { background-color: #f39c12; } /* 黃 */
+.total { background-color: #999; }       /* 灰 */
+
+.plan-btn {
+  display: block;
+  width: 100%;
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.plan-btn:hover {
+  background-color: #e67e00;
+}
