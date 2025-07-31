@@ -1,0 +1,137 @@
+/* 全域設定 */
+body {
+  font-family: "Microsoft JhengHei", sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 左側表單 */
+.loan-form {
+  width: 320px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tag {
+  background: orange;
+  color: #fff;
+  text-align: center;
+  padding: 6px 10px;
+  margin-bottom: 18px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 14px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group input[type="radio"] {
+  margin-right: 4px;
+}
+
+.unit {
+  position: absolute;
+  right: 12px;
+  top: 35px;
+  font-size: 12px;
+  color: gray;
+}
+
+.submit-btn {
+  width: 100%;
+  background: orange;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #e69500;
+}
+
+/* 右側結果 */
+.result-container {
+  display: flex;
+  gap: 30px;
+  align-items: start;
+}
+
+.result-card {
+  border: 1px solid #eee;
+  background: #fff;
+  border-radius: 8px;
+  width: 240px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.result-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.monthly {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+.result-card p {
+  margin: 5px 0;
+}
+
+.result-card .detail-list {
+  font-size: 13px;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #333;
+}
+
+.result-card .detail-list li {
+  margin: 4px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+
