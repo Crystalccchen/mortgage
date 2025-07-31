@@ -35,6 +35,7 @@ for (let i = 0; i <= 5; i++) {
   gracePeriodSelect.appendChild(option);
   if (i === 0) option.selected = true;
 }
+<<<<<<< HEAD
 // 切換利率方式顯示
 const rateTypeSelect = document.querySelector("select[value], select option"); // 直接用你設定的 id 更好
 const singleRate = document.querySelector(".single-rate");
@@ -47,6 +48,8 @@ document
     singleRate.style.display = isMulti ? "none" : "block";
     multiRateSection.style.display = isMulti ? "block" : "none";
   });
+=======
+>>>>>>> 9411356774328857d459076fb96598ebab56b040
 
 //年利率
 fetch("bankRates.json")
